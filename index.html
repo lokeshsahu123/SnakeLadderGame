@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Snake ladder</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/Fontawsome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="snake-lobby" style="overflow-x: hidden;">
+
+<div class="w-100 snake-full position-relative">
+
+	<div class="container-fluid snake-lobby-header py-2 pb-4 pb-sm-2">
+		<div class="row justify-content-between align-items-center">
+			<div class="w-auto d-flex align-items-center position-relative pe-0" style="z-index: 1;">
+				<button class="bg-transparent border-0 p-0 backBtn-teen me-2 backBtn" >
+					<img src="assets/img/back.png" width="40" />
+				</button>
+				<div class="d-flex align-items-center position-relative">
+			<div class="snakelobby-profile position-relative p-2">
+				<img src="assets/img/man.png" class="w-100">
+			</div>
+			<p class="snake-username mb-0">
+				<span class="d-block mb-0 ">Faizal Ali</span>
+				<strong class="d-block">500.00</strong></p>
+		</div>
+			</div>
+			
+			<div class="w-auto position-relative header-right" style="z-index: 1;">
+				<button class="bg-transparent border-0 p-0 position-relative privateBtn-teen" >
+					<img src="assets/img/user.png" width="50" />
+				</button>
+				<button class="bg-transparent border-0 p-0 position-relative privateBtn-teen" >
+					<img src="assets/img/bal.png" width="50" />
+					<span class="primeColor position-absolute top-0 start-0 end-0 noti-text">7</span>
+				</button>
+				<button class="bg-transparent border-0 p-0 position-relative privateBtn-teen" >
+					<img src="assets/img/sound.png" width="50" />
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-md-10 col-12">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<img src="assets/img/logo.png" class="w-100" />
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center">
+					<div class="col-5 text-center">
+						<a href="#!">
+							<img class="w-100" src="assets/img/twoplayers.png" />
+						</a>
+					</div>
+					<div class="col-5 text-center">
+						<a href="#!">
+							<img class="w-100" style="margin-top: -13px;" src="assets/img/threeplayers.png" />
+						</a>
+					</div>
+					<div class="col-5 text-center">
+						<a href="#!">
+							<img class="w-100" src="assets/img/forplayer.png" />
+						</a>
+					</div>
+					<div class="col-5 text-center">
+						<a href="#!">
+							<img class="w-100" src="assets/img/private.png" />
+						</a>
+					</div>
+
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-3 pe-0">
+						<a href="#">
+							<img class="" width="100" src="assets/img/three.png" />
+						</a>
+					</div>
+					<div class="col-3 pe-0">
+						<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<img class="" style="margin-left: -7px;" width="100" src="assets/img/setting.png" />
+						</a>
+					</div>
+					<div class="col-3 ps-0 position-relative">
+						<a href="#">
+							<img class="" width="100" src="assets/img/ad.png" />
+							<img class="position-absolute end-0 top-0" width="20" src="assets/img/ad1.png" style="margin-top: 15px;margin-right: 19px;" />
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-between referEarn-block position-absolute w-100 bottom-0 start-0 end-0 m-0 pb-3">
+		<div class="w-auto p-0">
+			<button class="border-0 p-0 bg-transparent overflow-hidden">
+				<img width="120" src="assets/img/refer.png" style="margin-left: -5px;" />	
+			</button>
+		</div>
+		<div class="w-auto p-0">
+			<button class="border-0 p-0 bg-transparent overflow-hidden">
+				<img width="120" src="assets/img/addcash.png" style="margin-right: -5px;" />	
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+	<div class="modal-dialog modal-dialog-centered  modal-sm">
+		<div class="modal-content slct-lobby">
+			<div class="modal-header d-block position-relative border-0">
+				<button type="button" data-bs-dismiss="modal" aria-label="Close"><span>X</span></button>
+				<div class="modal-title">Select lobby </div>
+			</div>
+			<div class="modal-body d-flex align-items-center justify-content-between">
+				<button><img src="assets/img/minus.png" alt=""></button>
+				<div class="money position-relative">
+					<img src="assets/img/coins.png" alt="">
+					<div class="position-absolute end-0 start-0  top-0 bottom-0 d-flex align-items-center justify-content-center">
+						<p>
+							<img src="assets/img/tropy.png" alt="" class="w-25">
+							<span>9999</span>
+						</p>
+						<span class="entery_fee">Entery : 1000</span>
+					</div>
+				</div>
+				<button><img src="assets/img/pluse.png" alt=""></button>
+			</div>
+			<div class="modal-footer border-0 position-relative d-flex justify-content-center align-items-center btn">
+				<img src="assets/img/play-btn.png" alt="">
+				<span><a href="lobby.html" class="nav-link">Play</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+</body>
